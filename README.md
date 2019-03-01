@@ -14,4 +14,6 @@ AtCoder に登録したら解くべき精選過去問 10 問　をRubyで解い�
     .abs    //絶対値
     .uniq   //重複を除去
     .sort   //ソート
+
+    a, b, c, x = 4.times.map { gets.to_i }  //getsを使った多重代入
 '''
