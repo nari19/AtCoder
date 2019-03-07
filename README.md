@@ -16,4 +16,5 @@ AtCoder に登録したら解くべき精選過去問 10 問　をRubyで解い�
     .sort   //ソート
 
     a, b, c, x = 4.times.map { gets.to_i }  //getsを使った多重代入
+    array = (3..5).to_a    // [3,4,5] 連続する数字で配列を作成
 '''
