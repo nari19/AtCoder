@@ -12,3 +12,4 @@ if s.chomp! == ""
 else
   puts 'NO'
 end
+
