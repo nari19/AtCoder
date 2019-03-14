@@ -25,3 +25,7 @@ pass = ("a".."z").to_a.shuffle.join[0..5]    // => "fbdgsc"
 (1..5).map { |i| i**2 }         # [1, 4, 9, 16, 25]
 
 ```
+
+## reservation
+
+- ABC049/d.rb
