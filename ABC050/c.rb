@@ -9,13 +9,17 @@ foo = ((n/2)**2) % (10 ** 9 + 7)
 
 bar = n.odd? ? (0...n).step(2).to_a : (1...n).step(2).to_a
 p bar
-for var in bar
-    bar.push(var)
-end
-baz = bar.delete_at(bar.find_index(0)) if n.even?
-p baz
+baz = bar.concat(bar)
+baz.delete_at(baz.find_index(0)) if n.odd?
+p "a: #{a.sort}"
 p a.sort
 result = foo if baz.sort == a.sort
   
 puts result 
 
+
+
+map <c-p> Scroll up
+map  <c-n> Scroll down
+map  <c-f> Scroll right
+map  <c-b> Scroll left
