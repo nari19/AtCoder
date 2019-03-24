@@ -19,7 +19,3 @@ puts result
 
 
 
-map <c-p> Scroll up
-map  <c-n> Scroll down
-map  <c-f> Scroll right
-map  <c-b> Scroll left

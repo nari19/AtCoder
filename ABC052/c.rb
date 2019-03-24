@@ -3,20 +3,41 @@
 n = gets.to_i
 puts "================="
 
-foo = 1
-
 # 階乗
-while n > 0 do
-    foo *= n
-    n -= 1
-end
+foo = 1
+(1..n).each{ |i| foo*=i }
+
 
 # 約数の個数
-bar = (1..foo).to_a
-baz = 0
-for var in bar do
-    baz += 1 if (foo % var) == 0
+#   素因数分解　https://algorithm.joho.info/mathematics/yakusuu-kosuu-keisanshiki-rei-genri/
+def factoring(foo)
+    hoge = 2
+    array = []
+
+    while foo >= hoge
+        if (foo % hoge) == 0 
+            foo /= hoge
+            array.push(hoge)
+            hoge -= 1
+        end
+        hoge += 1
+    end
+
+    array2 = array.uniq
+    array3 = []
+    for var in array2
+        array3.push(array.count{ |i| i==var })
+    end
+
+    result = 1
+    for var in array3
+        result *= (var + 1)
+    end
+    return result
 end
 
-result = baz % (10**9 + 7)
-puts result
+puts factoring(foo) % (10**9 + 7)
+
+
+
+
