@@ -35,3 +35,4 @@ array.delete_at(array.find_index(n))  //配列から同じ要素の中で１つ�
 
 - ABC049/d.rb
 - ABC051/c.rb
+- ABC054/c.rb
