@@ -5,6 +5,7 @@
 
 - [AtCoder on Ruby](https://qiita.com/d_nishiyama85/items/f79e034f6dcd4175cdc1)
 
+- [Rubyで競プロするときのTips](https://betrue12.hateblo.jp/entry/2018/12/01/224748)
 
 
 ## Rubyメソッド メモ

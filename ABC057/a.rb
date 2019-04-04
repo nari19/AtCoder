@@ -3,4 +3,4 @@
 a, b = gets.strip.split.map(&:to_i)
 puts "=============="
 
-
+puts (a + b) % 24
