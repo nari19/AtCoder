@@ -30,6 +30,8 @@ pass = ("a".."z").to_a.shuffle.join[0..5]    // => "fbdgsc"
 array.push(array2).flatten!     // 配列の結合
 array.delete_at(array.find_index(n))  //配列から同じ要素の中で１つだけ削除を行う
 
+10.gcd(4)  // => 2 最小公倍数
+10.lcm(4)  // => 20 最大公約数
 ```
 
 ## reservation
