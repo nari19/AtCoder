@@ -1,6 +1,6 @@
 # Digits in Multiplication      https://atcoder.jp/contests/abc057/tasks/abc057_c
 
-n = gets.to_i
+n = nn = gets.to_i
 puts "============"
 
 
@@ -14,13 +14,10 @@ while foo <= n do
     foo += 1
 end
 
+p bar.uniq
+baz = (2..nn).to_a
+for bar in bar.uniq.reverse
+    baz.select!{|i| i%bar == 0}
+end
 
-
-# baz = bar.length / 2
-# (1..baz).each do |i|
-#     while i > 0
-#         
-#         i -= 1
-#     end
-# end 
-
+p baz
