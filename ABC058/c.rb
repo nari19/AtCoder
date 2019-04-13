@@ -9,6 +9,18 @@ for var in s do
     result &= var 
 end
 
+num = []
+j = 0
+for rx in result.sort! do
+    for sy in s do
+        sc = sy.count(rx)
+        num.push(sc) if j == 0
+        num[j] = sc if sc < num[j]
+    end
+    # puts "#{rx}: #{num[j]}"
+    num[j].times{ print rx }
+    j += 1
+end
 
-p s
-p result
+puts ""
+
