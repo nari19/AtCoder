@@ -2,14 +2,19 @@
 
 a, b, c = gets.strip.split.map(&:to_i)
 
-foo = 0
-while (a * foo) < b do
-    puts (a * foo)
-    foo += 1
+foo = []
+bar = 1
+while (a * bar.succ) < 100 do
+    foo.push(a * bar)
+    bar += 1
 end
 
-def abc(a)
-    return (a * foo) / b
+result = 0
+for var in foo do
+    if (var % b) == c
+        result = 1
+        break
+    end
 end
 
-(abc(a) - abc(a + 1)).abs
+puts result == 1 ? "YES" : "NO"
