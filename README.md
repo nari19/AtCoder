@@ -20,6 +20,7 @@
 .step(n)       //指定した数だけ飛ばした配列を作る
 .delete_at(n)  //引数で与えられた位置の要素を削除する。
 .find_index(n)  //最初に見つけた要素の位置を返す
+.transpose      //配列の構造を反転
 
 a, b, c, x = 4.times.map { gets.to_i }  //getsを使った多重代入
 array = (3..5).to_a    // [3,4,5] 連続する数字で配列を作成
