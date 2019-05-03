@@ -4,12 +4,16 @@ n, m = gets.strip.split.map(&:to_i)
 puts "==================="
 
 result = 0
+baz = 10 ** 9 + 7
 if (n - m).abs <= 1 then
-    foo = 1
     bar = n + m
-    (1..bar).to_a.map{ |e| foo *= e }
-    foo /= n
-    foo /= m
+    foo = 1
+    for var in (1..bar).to_a do
+        foo *= var
+        foo %= baz
+    end
+    foo /= (1..n).to_a.inject(:*)
+    foo /= (1..m).to_a.inject(:*)
     foo += 2
     result = foo
 end
