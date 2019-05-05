@@ -7,14 +7,17 @@ result = 0
 s.length.times do
     s.pop(1)
     foo = s.length / 2
-    foo.times do |i|
-        bar = 0
-        for var in s.join.scan(/.{1,#{i}}/) do
-            bar = 1 if var ==
+    bar = 0
+    (1..foo).each do |i|
+        fuga = s.join.scan(/.{1,#{i}}/)
+        for var in fuga do
+            puts var
+            hoge = fuga.index(var) + 1
+            bar = 1 if var != hoge && var != fuga.last
         end
-        break if bar = 1
+        break if bar == 0
     end
-    result = s.length    
+    break if bar == 0
 end
 
-puts result
+puts s.length
