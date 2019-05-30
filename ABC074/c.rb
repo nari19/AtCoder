@@ -10,7 +10,7 @@ ccr = (10 * suger) / (water + suger)
 melt = (water / 100) * e
 
 while (water + suger) < f do
-
+    water += 100
 end
 
 puts 
