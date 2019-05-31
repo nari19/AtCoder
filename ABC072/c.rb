@@ -8,5 +8,4 @@ am = a.map{ |n| n-1 }
 ap = a.map{ |m| m+1 }
 foo = a + am + ap
 bar = foo.max_by{ |x| foo.count(x) }
-
 puts foo.count(bar)
