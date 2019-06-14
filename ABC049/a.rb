@@ -1,12 +1,2 @@
-# UOIAUAI   https://atcoder.jp/contests/abc049/tasks/abc049_a
-
-input = gets.chomp!
-result = 'consonant'
-
-for var in ['a', 'i', 'u', 'e', 'o']
-    if input == var
-      result = 'vowel'
-    end
-end
-
-puts result
+a = gets.strip
+puts ['a', 'i', 'u', 'e', 'o'].include?(a) ? 'vowel' : 'consonant'

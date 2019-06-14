@@ -5,8 +5,11 @@ t = gets.strip
 puts "==========="
 
 foo = s.split("")
+result = false
 foo.each do |i| 
     if i != "?" then
         puts "#{foo.index(i) + 1}番目 #{i}"
     end
 end
+
+push result ? hoge : "UNRESTORABLE"
