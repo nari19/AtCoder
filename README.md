@@ -60,3 +60,4 @@ a.insert(a.length, "x") // 文字列の最後に挿入　=> "abcdx"
 - ABC074/c.rb
 - ABC075/c.rb
 - ABC076/b.rb
+- ABC076/c.rb
