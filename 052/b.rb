@@ -1,8 +1,5 @@
-# Increment Decrement       https://atcoder.jp/contests/abc052/tasks/abc052_b
-
 n = gets.to_i
 s = gets.strip.split("")
-puts "============"
 
 x = 0
 result = 0

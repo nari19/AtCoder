@@ -1,5 +1,3 @@
-# A to Z String         https://atcoder.jp/contests/abc053/tasks/abc053_b
-
 s = gets.strip.split("")
 a = z = ""
 

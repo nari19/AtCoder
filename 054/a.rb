@@ -1,7 +1,4 @@
-# One Card Poker        https://atcoder.jp/contests/abc054/tasks/abc054_a
-
-a, b = gets.strip.split.map(&:to_i)
-puts "============"
+a, b = gets.split.map(&:to_i)
 
 if a == b
     puts "Draw"
