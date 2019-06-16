@@ -3,11 +3,7 @@ result = 0
 
 (0..k).each do |x|
     (0..k).each do |y|
-        (0..k).each do |z|
-            if (x + y + z) == s
-                result += 1
-            end
-        end
+        result += 1 if s - (x + y) <= k && s - (x + y) >= 0
     end
 end
 
