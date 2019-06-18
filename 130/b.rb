@@ -1,13 +1,11 @@
-_n, x = gets.split.map(&:to_i)
+n, x = gets.split.map(&:to_i)
 l = gets.split.map(&:to_i)
 
-result = 0
 foo = 0
-for var in l do
-    foo += var
-    break if l[0] > x
-    result += 1
-    break if foo > x
+result = 1
+n.times do |i|
+    foo += l[i]
+    result += 1 if foo <= x
 end
 
 puts result

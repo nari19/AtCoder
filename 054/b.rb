@@ -1,10 +1,6 @@
-# Template Matching     https://atcoder.jp/contests/abc054/tasks/abc054_b
-
 n, m = gets.strip.split.map(&:to_i)
 a = n.times.map{ gets.strip.split("") }
 b = m.times.map{ gets.strip.split("") }
-puts "=================="
-
 
 def foo(bar, baz, m, b, a)
     hoge = 0
