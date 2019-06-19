@@ -2,15 +2,15 @@ n, m = gets.strip.split.map(&:to_i)
 nab = n.times.map{ gets.strip.split.map(&:to_i) }
 mcd = m.times.map{ gets.strip.split.map(&:to_i) }
 
-n.times do |i|
-    foo = 10 ** 8
-    result = []
-    for var in mcd do
-        baz = (var[0] - nab[i][0]).abs + (var[1] - nab[i][1]).abs
-        if  baz < foo then
-            foo = baz
-            result = var
+nab.each do |xi|
+    distance = -1
+    indexNumber = 0
+    mcd.each_with_index do |var, index|
+        temDistance = (var[0] - xi[0]).abs + (var[1] - xi[1]).abs
+        if  distance == -1 || temDistance < distance then
+            indexNumber = index
+            distance = temDistance
         end
     end
-    puts mcd.index(result) + 1
+    puts indexNumber.succ
 end
