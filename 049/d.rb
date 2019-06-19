@@ -1,20 +1,13 @@
-# Connectivity       https://atcoder.jp/contests/abc049/tasks/arc065_b
+n, k, l = gets.split.map(&:to_i)
+q = k.times.map{ gets.split.map(&:to_i) }
+s = l.times.map{ gets.split.map(&:to_i) }
 
-n, k, l = gets.strip.split.map(&:to_i)
-p = (k + l).times.map{ gets.strip.split.map(&:to_i) }
-puts "==============="
+result = []
+n.times do |i|
+    num = 1
 
-k.times do |j|
-    n.times do |i|e
 
-    end
+    result.push(num)
 end
 
-l.times do |n|
-    n.times do |i|e
-
-    end
-end
-
-
-
+puts result.join(" ")

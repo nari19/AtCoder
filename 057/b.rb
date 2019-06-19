@@ -1,10 +1,6 @@
-# Checkpoints       https://atcoder.jp/contests/abc057/tasks/abc057_b
-
 n, m = gets.strip.split.map(&:to_i)
 nab = n.times.map{ gets.strip.split.map(&:to_i) }
 mcd = m.times.map{ gets.strip.split.map(&:to_i) }
-puts "====================="
-
 
 n.times do |i|
     foo = 10 ** 8

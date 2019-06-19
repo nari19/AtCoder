@@ -25,6 +25,7 @@
 .transpose      //配列の構造を反転
 .inject(:*)     /// 配列の値すべてを乗算する
 
+n, k = 2.times.map{ gets.to_i }  // 複数の変数にgetsの値を入れる
 a, b, c, x = 4.times.map { gets.to_i }  //getsを使った多重代入
 array = (3..5).to_a    // [3,4,5] 連続する数字で配列を作成
 csf = 3.times.map{ gets.strip.split.map(&:to_i) }   //getsの二次元配列
@@ -59,5 +60,4 @@ a.insert(a.length, "x") // 文字列の最後に挿入　=> "abcdx"
 - ABC062/c.rb
 - ABC074/c.rb
 - ABC075/c.rb
-- ABC076/b.rb
 - ABC076/c.rb
