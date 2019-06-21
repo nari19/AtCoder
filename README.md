@@ -47,6 +47,9 @@ a.insert(a.length, "x") // 文字列の最後に挿入　=> "abcdx"
 // Rubyでの順列、組み合わせ http://simanman.hatenablog.com/entry/2013/03/18/210717
 [1,2,3,4].combination(3).to_a     // [[1, 2, 3], [1, 2, 4], [1, 3, 4], [2, 3, 4]]
 [1,2,3].permutation(3).to_a         // [[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]]
+
+// 階乗
+(1..5).inject(&:*)      // 1*2*3*4*5 => 120
 ```
 
 ## reservation
