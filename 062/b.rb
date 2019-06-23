@@ -1,9 +1,5 @@
-# Picture Frame     https://atcoder.jp/contests/abc062/tasks/abc062_b
-
 h, w = gets.strip.split.map(&:to_i)
 a = h.times.map{ gets.strip }
-puts "================="
-
 
 x = "#"
 for aa in a do
@@ -16,6 +12,5 @@ foo = ""
 
 a.insert(0, foo)
 a.push(foo)
-
 
 puts a
