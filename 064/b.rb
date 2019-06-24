@@ -1,9 +1,4 @@
-# Traveling AtCoDeer Problem        https://atcoder.jp/contests/abc064/tasks/abc064_b
+_n = gets.to_i
+a = gets.split.map(&:to_i).sort
 
-n = gets.strip.to_i
-a = gets.strip.split.map(&:to_i)
-puts "==============="
-
-a.sort!
-foo = a.last - a.first
-puts foo
+puts a.last - a.first
