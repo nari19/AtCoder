@@ -1,9 +1,5 @@
-# Collecting Balls      https://atcoder.jp/contests/abc074/tasks/abc074_b
-
-n = gets.to_i
-k = gets.to_i
-x = gets.strip.split.map(&:to_i)
-puts "================="
+n, k = 2.times.map{ gets.to_i }
+x = gets.split.map(&:to_i)
 
 result = 0
 n.times do |i|

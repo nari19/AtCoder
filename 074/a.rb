@@ -1,7 +1,2 @@
-# Bichrome Cells        https://atcoder.jp/contests/abc074/tasks/abc074_a
-
-n = gets.to_i
-a = gets.to_i
-puts "==============="
-
+n, a = 2.times.map{ gets.to_i }
 puts (n ** 2) - a
