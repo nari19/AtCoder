@@ -1,8 +1,3 @@
-# Rating Goal       https://atcoder.jp/contests/abc076/tasks/abc076_a
-
-r = gets.to_i
-g = gets.to_i
-puts "=================="
-
+r, g = 2.times.map{ gets.to_i }
 puts (2 * g) -r
 
