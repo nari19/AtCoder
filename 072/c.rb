@@ -1,11 +1,5 @@
-# Together      https://atcoder.jp/contests/abc072/tasks/arc082_a
+n = gets.to_i
+a = gets.split.map(&:to_i)
 
-n = gets.strip.to_i
-a = gets.strip.split.map(&:to_i)
-puts "=========================-"
-
-am = a.map{ |n| n-1 }
-ap = a.map{ |m| m+1 }
-foo = a + am + ap
-bar = foo.max_by{ |x| foo.count(x) }
-puts foo.count(bar)
+hoge = a + a.map{ |i| i-1 } + a.map{ |j| j+1 }
+puts hoge.count(hoge.max_by{ |x| hoge.count(x) })
