@@ -1,7 +1,5 @@
-# Shift only    https://atcoder.jp/contests/abc081/tasks/abc081_b
-
-input = gets.to_i
-input2 = gets.split(' ').map(&:to_i)
+_input = gets.to_i
+input2 = gets.split.map(&:to_i)
 hoge = 0
 
 while input2.all?(&:even?) do
