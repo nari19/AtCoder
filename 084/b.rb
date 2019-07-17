@@ -1,11 +1,8 @@
-# Postal Code       https://atcoder.jp/contests/abc084/tasks/abc084_b
+a, b = gets.split.map(&:to_i)
+s = gets.strip.split("")
 
-a, b = gets.strip.split.map(&:to_i)
-s = gets.chomp!
+x =  s.find_index{ |n| n=="-" } == a
+y =  s.length == (a+b).succ
+z =  s.count("-") == 1
 
-hoge = a <= 1
-fuga = b > 5
-piyo = s.split("").length != a+b+1
-hogehoge = s.split("")[a] != "-"
-
-puts (hoge || fuga || piyo || hogehoge) ? 'No' : 'Yes'
+puts x && y && z ? "Yes" : "No"
