@@ -1,5 +1,3 @@
-# 1 21      https://atcoder.jp/contests/abc086/tasks/abc086_b
-
 a, b = gets.strip.split
 foo = (a + b).to_i
 result = "No"
