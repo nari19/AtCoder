@@ -1,19 +1,4 @@
-fuga = 0
-piyo = 0
-input = []
-
-
-input = input.map{|a| a + 1}
-
-input[0].times do |i|
-    input[1].times do |j|
-        input[2].times do |k|
-            sum = 500*i + 100*j + 50*k
-            if input[3]-1 == sum then
-                fuga += 1
-            end
-        end
-    end
-end
-
-puts fuga
+a, b, c, x = 4.times.map{ gets.to_i.succ }
+count = 0
+a.times{ |i| b.times{ |j| c.times{ |k| count += 1 if x-1 == (500*i + 100*j + 50*k) }}}
+puts count
