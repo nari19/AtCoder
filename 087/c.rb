@@ -6,7 +6,6 @@ result = 0
     baz = 0
     i.times{ |j| baz += a[0][j] }
     (i..n).each{ |k| baz += a[1][k-1] }
-    puts "#{i} : #{baz}"
     result = baz if baz > result
 end
 
