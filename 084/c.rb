@@ -1,9 +1,6 @@
-# Special Trains        https://atcoder.jp/contests/abc084/tasks/abc084_c
-
 n = gets.to_i
-csf = (n-1).times.map{ gets.strip.split.map(&:to_i) }
+csf = (n-1).times.map{ gets.split.map(&:to_i) }
 
-puts "============"
 n.times do |i|
     if i == n-2
         result = csf[i][0] + csf[i][1]
