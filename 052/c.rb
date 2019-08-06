@@ -1,15 +1,8 @@
-# Factors of Factorial          https://atcoder.jp/contests/abc052/tasks/arc067_a
-
 n = gets.to_i
-puts "================="
 
-# 階乗
 foo = 1
 (1..n).each{ |i| foo*=i }
 
-
-# 約数の個数
-#   素因数分解　https://algorithm.joho.info/mathematics/yakusuu-kosuu-keisanshiki-rei-genri/
 def factoring(foo)
     hoge = 2
     array = []
@@ -25,19 +18,11 @@ def factoring(foo)
 
     array2 = array.uniq
     array3 = []
-    for var in array2
-        array3.push(array.count{ |i| i==var })
-    end
+    array2.each{ |var| array3.push(array.count{ |i| i==var }) }
 
     result = 1
-    for var in array3
-        result *= (var + 1)
-    end
+    array3.each{ |var| result *= (var + 1)}
     return result
 end
 
 puts factoring(foo) % (10**9 + 7)
-
-
-
-
