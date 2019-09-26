@@ -5,12 +5,9 @@ a = n.times.map{ gets.to_i }
 sum = 0
 a.each do |i|
     d.times do |j|
-        # hoge = (i * j) + 1
-        # puts "---------"
-        # puts hoge
-        # break hoge > d
-        # sum += 1
-        puts "#{i}, #{j}"
+        hoge = (i * j) + 1
+        break if hoge > d
+        sum += 1
     end
 end
 puts sum + x
