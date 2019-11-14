@@ -1,0 +1,1 @@
+puts gets.strip.split("").map(&:to_i).count(1)
