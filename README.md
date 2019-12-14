@@ -34,6 +34,7 @@ pass = ("a".."z").to_a.shuffle.join[0..5]    // => "fbdgsc"
 (1..5).map { |i| i**2 }         // => [1, 4, 9, 16, 25]
 array.push(array2).flatten!     // 配列の結合
 array.delete_at(array.find_index(n))  //配列から同じ要素の中で１つだけ削除を行う
+(1..20).select(&:odd?)        // => [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
 
 10.gcd(4)  // => 2 最小公倍数
 10.lcm(4)  // => 20 最大公約数
