@@ -1,10 +1,6 @@
-n = gets.to_i
-a = gets.split.map(&:to_i)
-
-fuga = 0
-while a.all?(&:even?)
-    a.map!{ |e| e /= 2 }
-    fuga += 1
+n = gets.to_i; s = gets.split(""); hoge = []
+(1..(n-1)).each do |i|
+    fuga = s[0...i] & s[i...n]
+    hoge.push(fuga.length)
 end
-    
-puts fuga
+puts hoge.max
