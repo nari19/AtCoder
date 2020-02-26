@@ -11,7 +11,7 @@
 
 ## Rubyメソッド メモ
 
-```
+``` ruby
 .succ   //１つ進む
 .abs    //絶対値
 .uniq   //重複を除去
@@ -51,6 +51,13 @@ a.insert(a.length, "x") // 文字列の最後に挿入　=> "abcdx"
 
 // 階乗
 (1..5).inject(&:*)      // 1*2*3*4*5 => 120
+```
+
+## TypeScript メモ
+
+``` ts
+Array.from(Array(100).keys())   // => [0, 1, 2, ..., 99]
+Array(5).fill(0)    // 同じ値での配列初期化[ 0, 0, 0, 0, 0 ] 
 ```
 
 ## reservation
