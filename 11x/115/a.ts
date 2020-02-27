@@ -1,4 +1,4 @@
-const funcA = (input: string): void => {
+((input: string): void => {
     const message = (): string => {
         switch (Number(input)) {
             case 22: return 'Christmas Eve Eve Eve'
@@ -8,5 +8,4 @@ const funcA = (input: string): void => {
         }
     }
     console.log(message());
-}
-funcA(require('fs').readFileSync('/dev/stdin', 'utf8'));
+})(require('fs').readFileSync('/dev/stdin', 'utf8'));
