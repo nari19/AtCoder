@@ -64,6 +64,7 @@ split(/\n\/)    // 改行ありの文字列を配列に分割
 Math.max(...[3, 1, 4, 9]);  // 最大値=> 9
 [1, 2, 3].reduce((a, x) => a+=x, 0) // 合計値=> 6
 [3, 2, 1].sort((a, b) => { return a-b });  // 数値のソート => [1, 2, 3]
+new Set(hoge).size == hoge.length   // 重複のチェック
 ```
 
 ## reservation
