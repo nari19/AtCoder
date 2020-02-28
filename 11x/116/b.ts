@@ -1,12 +1,9 @@
 ((input: string): void => {
     let hoge: number[] = [Number(input)];
-    const fuga: any = new Set(hoge);
-    while (fuga.size == hoge.length) {
-        console.log("重複なし!");
-        // if (hoge[-1] % 2 == 0) {
-        //     hoge.push(hoge[-1]/2);
-        // } else {
-        //     hoge.push((hoge[-1]*3)+1);
-        // }        
+    const hEnd = (): number => { return hoge.slice(-1)[0]; }
+    while (new Set(hoge).size == hoge.length) {
+        let piyo: boolean = hEnd() % 2 == 0;
+        hoge.push(piyo ? hEnd()/2 : (hEnd()*3)+1);
     }
+    console.log(hoge.length);
 })(require('fs').readFileSync('/dev/stdin', 'utf8'));
