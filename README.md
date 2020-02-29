@@ -66,6 +66,7 @@ Math.max(...[3, 1, 4, 9]);  // 最大値=> 9
 [3, 2, 1].sort((a, b) => { return a-b });  // 数値のソート => [1, 2, 3]
 new Set(hoge).size == hoge.length   // 重複のチェック
 [1,2,3].slice(-1)[0]    // 配列の末端を取得 => 3
+[...Array(5)].map(() => console.log("a");); // => n回文のループ
 ```
 
 ## reservation
