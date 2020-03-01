@@ -59,10 +59,10 @@ a.insert(a.length, "x") // 文字列の最後に挿入　=> "abcdx"
 Array.from(Array(100).keys())   // => [0, 1, 2, ..., 99]
 Array(5).fill(0)    // 同じ値での配列初期化[ 0, 0, 0, 0, 0 ] 
 console.log(Array.from([1, 2, 3], x => x + x));     // expected output: Array [2, 4, 6]
-split(/\n\/)    // 改行ありの文字列を配列に分割
+split(/\n/)    // 改行ありの文字列を配列に分割
 [1,2,3].slice(1)    // =>[2,3]
 Math.max(...[3, 1, 4, 9]);  // 最大値=> 9
-[1, 2, 3].reduce((a, x) => a+=x, 0) // 合計値=> 6
+[1, 2, 3].reduce((a, b) => a+=b, 0) // 合計値=> 6
 [3, 2, 1].sort((a, b) => { return a-b });  // 数値のソート => [1, 2, 3]
 new Set(hoge).size == hoge.length   // 重複のチェック
 [1,2,3].slice(-1)[0]    // 配列の末端を取得 => 3
