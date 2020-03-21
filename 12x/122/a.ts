@@ -1,6 +1,5 @@
 ((input: string): void => {
-    const [[o, p], [q, r]]: number[][] = input.trim().split(/\n/).map(
-        (i: string): number[] => { return i.split(" ").map(Number) }
-    );
-    console.log((o-q) * (p-r));
+    const b = input.trim();
+    const hoge = { A: "T", T: "A", G: "C", C: "G" };
+    console.log(hoge[b]);
 })(require('fs').readFileSync('/dev/stdin', 'utf8'));
