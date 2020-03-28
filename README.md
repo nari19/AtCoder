@@ -70,15 +70,10 @@ new Set(hoge).size == hoge.length   // 重複のチェック
 [...Array(5)].map(() => console.log("a");); // => n回文のループ
 ```
 
-## reservation
+template
 
-- ABC049/d.rb
-- ABC051/c.rb
-- ABC054/c.rb
-- ABC057/c.rb
-- ABC059/c.rb
-- ABC060/c.rb
-- ABC062/c.rb
-- ABC074/c.rb
-- ABC075/c.rb
-- ABC076/c.rb
+``` ts
+((input: string): void => {
+    console.log(input);
+})(require('fs').readFileSync('/dev/stdin', 'utf8'));
+```
