@@ -1,3 +1,4 @@
 ((input: string): void => {
-    console.log(input);
+    const [a, b, c] = input.split(" ").map(Number);
+    console.log((b/a)<c ? Math.floor(b/a) : c);
 })(require('fs').readFileSync('/dev/stdin', 'utf8'));
