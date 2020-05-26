@@ -68,6 +68,7 @@ Math.max(...[3, 1, 4, 9]);  // 最大値=> 9
 new Set(hoge).size == hoge.length   // 重複のチェック
 [1,2,3].slice(-1)[0]    // 配列の末端を取得 => 3
 [...Array(5)].map(() => console.log("a");); // => n回文のループ
+s.filter((v, i) => v == t[i]).length // => 要素のカウント　ワンライナー
 ```
 
 template
