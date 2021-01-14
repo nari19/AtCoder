@@ -1,7 +1,7 @@
 ((input) => {
-  const dish = input.split('\n').slice(0, -1)
-    .map(v => v.split(" "))
-    .map((v) => v.map((_v) => Number(_v)))
+  const dish = input.split('\n').slice(0, -1).map( v => {
+    v.split(" ").map((_v) => Number(_v))
+  })
   const satisfactionLevels = [...Array(dish[0][0])].map( (_,i) => {
     const num = dish[1][i]
     const lev = dish[2][num-1]
