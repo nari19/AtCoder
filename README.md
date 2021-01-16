@@ -53,9 +53,9 @@ a.insert(a.length, "x") // 文字列の最後に挿入　=> "abcdx"
 (1..5).inject(&:*)      // 1*2*3*4*5 => 120
 ```
 
-## TypeScript メモ
+## JavaScript メモ
 
-``` ts
+``` js
 trim()  //  前後の空白、改行をなくす
 Array.from(Array(100).keys())   // => [0, 1, 2, ..., 99]
 Array(5).fill(0)    // 同じ値での配列初期化[ 0, 0, 0, 0, 0 ] 
@@ -69,6 +69,7 @@ new Set(hoge).size == hoge.length   // 重複のチェック
 [1,2,3].slice(-1)[0]    // 配列の末端を取得 => 3
 [...Array(5)].map(() => console.log("a");); // => n回文のループ
 s.filter((v, i) => v == t[i]).length // => 要素のカウント　ワンライナー
+["1","2","3"].map(Number) // => [1,2,3] 配列の数字変換
 ```
 
 template
