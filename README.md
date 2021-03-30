@@ -1,15 +1,29 @@
 # AtCoder
 
+## Memo
 
+- JavaScript
 
-- [AtCoder Problems](https://kenkoooo.com/atcoder/?user=&rivals=&kind=category#/user/nari19)
+``` js
+trim()  //  前後の空白、改行をなくす
+Array.from(Array(100).keys())   // => [0, 1, 2, ..., 99]
+[...Array(10)].map((_,i) => i+1) // => [1,2,3,4,5,6,7,8,9,10]
+Array(5).fill(0)    // 同じ値での配列初期化[ 0, 0, 0, 0, 0 ] 
+console.log(Array.from([1, 2, 3], x => x + x));     // expected output: Array [2, 4, 6]
+split('\n')    // 改行ありの文字列を配列に分割
+[1,2,3].slice(1)    // =>[2,3]
+Math.max(...[3, 1, 4, 9]);  // 最大値=> 9
+[1, 2, 3].reduce((a, b) => a+=b, 0) // 合計値=> 6
+[3, 2, 1].sort((a, b) => a-b );  // 数値のソート => [1, 2, 3]
+new Set(hoge).size == hoge.length   // 重複のチェック
+[1,2,3].slice(-1)[0]    // 配列の末端を取得 => 3
+[...Array(5)].forEach(() => console.log("a");); // => n回文のループ
+s.filter((v, i) => v == t[i]).length // => 要素のカウント　ワンライナー
+["1","2","3"].map(Number) // => [1,2,3] 配列の数字変換
+const [a,b] = [[1,2,3], [1,2,3]]; a.every( (v,i) => v===b[i] )// 配列の等値比較 => true
+```
 
-- [AtCoder on Ruby](https://qiita.com/d_nishiyama85/items/f79e034f6dcd4175cdc1)
-
-- [Rubyで競プロするときのTips](https://betrue12.hateblo.jp/entry/2018/12/01/224748)
-
-
-## Rubyメソッド メモ
+- Ruby
 
 ``` ruby
 .succ   //１つ進む
@@ -53,31 +67,13 @@ a.insert(a.length, "x") // 文字列の最後に挿入　=> "abcdx"
 (1..5).inject(&:*)      // 1*2*3*4*5 => 120
 ```
 
-## JavaScript メモ
+
+## template
+
+- JavaScript
 
 ``` js
-trim()  //  前後の空白、改行をなくす
-Array.from(Array(100).keys())   // => [0, 1, 2, ..., 99]
-[...Array(10)].map((_,i) => i+1) // => [1,2,3,4,5,6,7,8,9,10]
-Array(5).fill(0)    // 同じ値での配列初期化[ 0, 0, 0, 0, 0 ] 
-console.log(Array.from([1, 2, 3], x => x + x));     // expected output: Array [2, 4, 6]
-split('\n')    // 改行ありの文字列を配列に分割
-[1,2,3].slice(1)    // =>[2,3]
-Math.max(...[3, 1, 4, 9]);  // 最大値=> 9
-[1, 2, 3].reduce((a, b) => a+=b, 0) // 合計値=> 6
-[3, 2, 1].sort((a, b) => a-b );  // 数値のソート => [1, 2, 3]
-new Set(hoge).size == hoge.length   // 重複のチェック
-[1,2,3].slice(-1)[0]    // 配列の末端を取得 => 3
-[...Array(5)].forEach(() => console.log("a");); // => n回文のループ
-s.filter((v, i) => v == t[i]).length // => 要素のカウント　ワンライナー
-["1","2","3"].map(Number) // => [1,2,3] 配列の数字変換
-const [a,b] = [[1,2,3], [1,2,3]]; a.every( (v,i) => v===b[i] )// 配列の等値比較 => true
-```
-
-template
-
-``` ts
-((input: string): void => {
-    console.log(input);
+(input => {
+  console.log(input);
 })(require('fs').readFileSync('/dev/stdin', 'utf8'));
 ```
